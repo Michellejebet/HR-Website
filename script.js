@@ -53,3 +53,65 @@
             // Reset form
             this.reset();
         });
+
+
+// Client Slideshow
+let slideIndex = 1;
+let slideTimer;
+
+// Initialize slideshow
+document.addEventListener('DOMContentLoaded', function() {
+    showSlides(slideIndex);
+    startAutoSlide();
+});
+
+// Auto slide every 3 seconds
+function startAutoSlide() {
+    slideTimer = setInterval(function() {
+        changeSlide(1);
+    }, 3000);
+}
+
+// Stop auto slide when user manually changes
+function resetAutoSlide() {
+    clearInterval(slideTimer);
+    startAutoSlide();
+}
+
+// Next/previous controls
+function changeSlide(n) {
+    resetAutoSlide();
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    resetAutoSlide();
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("client-slide");
+    let dots = document.getElementsByClassName("dot");
+    
+    if (slides.length === 0) return; // Exit if no slides found
+    
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].classList.remove("active");
+    }
+    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].classList.add("active");
+    if (dots[slideIndex-1]) {
+        dots[slideIndex-1].className += " active";
+    }
+}
