@@ -35,7 +35,7 @@
         }
         
         .hero-image {
-            background-image: url('./home page.jpg');
+            background-image: url('./home page.jpg?v=2');
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
