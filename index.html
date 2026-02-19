@@ -656,6 +656,107 @@
         </div>
     </section>
 
+    <!-- Our Team Section -->
+    <section id="team" class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-orange-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-orange-600 mb-4">
+                Meet Our Team
+            </h2>
+            <div class="section-divider"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-6">
+                Our expert team of HR professionals dedicated to transforming your organization
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Team Member 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                <img src="./image 1.jpeg" alt="CPA Frank Oloo" class="w-full h-80 object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2">
+                        CPA Frank Oloo
+                    </h3>
+                    <p class="text-gray-600">
+                        Lead Consultant – Finance & Audit
+                    </p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                <img src="./image 2.jpeg" alt="Dr. Fridah Kathure" class="w-full h-80 object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2">
+                        Dr. Fridah Kathure
+                    </h3>
+                    <p class="text-gray-600">
+                        Lead Trainer
+                    </p>
+
+                    <div id="bio-fridah" class="hidden text-sm text-gray-600 mt-3 text-justify">
+                        MSc Procurement and Logistics, CPAK, PhD Supply Chain Management (In Progress)
+                    </div>
+
+                    <button onclick="toggleBio('bio-fridah', this)"
+                        class="mt-3 text-orange-600 font-semibold hover:underline">
+                        Read more
+                    </button>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                <img src="./image 3.jpeg" alt="Alicia Mwende" class="w-full h-80 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2 text-center">
+                        Alicia Mwende
+                    </h3>
+                    <p class="text-gray-600 text-center font-semibold">
+                        Lead Human Resource Consultant
+                    </p>
+
+                    <div id="bio-alicia" class="hidden text-sm text-gray-600 mt-3 text-justify">
+                        Certified Human Resource Professional (CHRPK) with over five years’ experience delivering effective HR solutions across diverse organizational environments. Proven expertise in recruitment and retention, payroll and benefits administration, statutory compliance, employee relations, performance management, HR records management, and policy development. Skilled in HRIS utilization, training and development, conflict resolution, and fostering productive workplace relationships. A results-driven HR practitioner committed to enhancing employee engagement and supporting business objectives.
+                    </div>
+
+                    <button onclick="toggleBio('bio-alicia', this)"
+                        class="mt-3 text-orange-600 font-semibold hover:underline block mx-auto">
+                        Read more
+                    </button>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                <img src="./image 4.jpeg" alt="Nelly Ayako Ambuli"  class="w-full h-80 object-cover object-top">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2 text-center">
+                        Nelly Ayako Ambuli, MBA
+                    </h3>
+                    <p class="text-gray-600 text-center font-semibold">
+                        Group HR Manager & Head of People & Culture
+                    </p>
+
+                    <div id="bio-nelly" class="hidden text-sm text-gray-600 mt-3 text-justify">
+                        Nelly Ayako Ambuli is an accomplished Human Resource Executive and Youth Capacity Development Specialist with over fifteen (15) years of experience leading human capital strategy, workforce readiness, and institutional capacity strengthening across Kenya and international contexts. She provides strategic leadership in the design and implementation of people-centered HR systems that enhance organizational performance and sustainability.<br><br>
+                        She holds an MBA in Strategic Management and Human Resource Management, a Postgraduate Diploma in HR Management, and a Bachelor of Education (Arts). She is a professional member of the Institute of Human Resource Management (IHRM–Kenya).
+                    </div>
+
+                    <button onclick="toggleBio('bio-nelly', this)"
+                        class="mt-3 text-orange-600 font-semibold hover:underline block mx-auto">
+                        Read more
+                    </button>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
         <div class="container mx-auto px-4">
@@ -961,5 +1062,19 @@
         </div>
     </footer>
     <script src="./script.js"></script>
+    <script>
+function toggleBio(id, button) {
+    const bio = document.getElementById(id);
+
+    if (bio.classList.contains('hidden')) {
+        bio.classList.remove('hidden');
+        button.textContent = 'Read less';
+    } else {
+        bio.classList.add('hidden');
+        button.textContent = 'Read more';
+    }
+}
+</script>
+
 </body>
 </html>
