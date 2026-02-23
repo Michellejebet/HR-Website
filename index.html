@@ -657,105 +657,166 @@
     </section>
 
     <!-- Our Team Section -->
-    <section id="team" class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-orange-50">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-600 mb-4">
-                Meet Our Team
-            </h2>
-            <div class="section-divider"></div>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-6">
-                Our expert team of HR professionals dedicated to transforming your organization
-            </p>
+    <section id="team" class="py-16 md:py-24 relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-orange-50"></div>
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-blue-600 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-64 h-64 bg-orange-500 rounded-full blur-3xl"></div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            <!-- Team Member 1 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <img src="./image 1.jpeg" alt="CPA Frank Oloo" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-orange-600 mb-2">
-                        CPA Frank Oloo
-                    </h3>
-                    <p class="text-gray-600">
-                        Lead Consultant – Finance & Audit
-                    </p>
-                </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-orange-600 mb-4">
+                    Meet Our Expert Team
+                </h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="text-xl text-gray-700 max-w-4xl mx-auto mt-8 leading-relaxed">
+                    Our dedicated team of HR professionals brings together decades of combined experience to deliver transformative solutions that drive organizational excellence and foster workplace success.
+                </p>
             </div>
 
-            <!-- Team Member 2 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <img src="./image 2.jpeg" alt="Dr. Fridah Kathure" class="w-full h-80 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-orange-600 mb-2">
-                        Dr. Fridah Kathure
-                    </h3>
-                    <p class="text-gray-600">
-                        Lead Trainer
-                    </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                    <div id="bio-fridah" class="hidden text-sm text-gray-600 mt-3 text-justify">
-                        MSc Procurement and Logistics, CPAK, PhD Supply Chain Management (In Progress)
+                <!-- Team Member 1 -->
+                <div class="group relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-orange-500 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-300"></div>
+                    <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./image 1.jpeg" alt="CPA Frank Oloo" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 text-center relative">
+                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-blue-600 to-orange-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:-translate-y-2">
+                                <i class="fas fa-chart-line text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-orange-600 mb-2 transition-colors duration-300 group-hover:text-blue-600">
+                                CPA Frank Oloo
+                            </h3>
+                            <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-3 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                            <p class="text-gray-700 font-semibold mb-4 text-sm uppercase tracking-wide">
+                                Lead Consultant – Finance & Audit
+                            </p>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                A seasoned financial expert with over 10 years of experience in financial auditing and consultancy. Frank brings exceptional analytical skills and strategic financial planning expertise to help organizations optimize their financial operations and achieve sustainable growth.
+                            </p>
+                            <div class="mt-4 flex justify-center space-x-3">
+                                <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-envelope text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <button onclick="toggleBio('bio-fridah', this)"
-                        class="mt-3 text-orange-600 font-semibold hover:underline">
-                        Read more
-                    </button>
                 </div>
-            </div>
 
-            <!-- Team Member 3 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <img src="./image 3.jpeg" alt="Alicia Mwende" class="w-full h-80 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-orange-600 mb-2 text-center">
-                        Alicia Mwende
-                    </h3>
-                    <p class="text-gray-600 text-center font-semibold">
-                        Lead Human Resource Consultant
-                    </p>
-
-                    <div id="bio-alicia" class="hidden text-sm text-gray-600 mt-3 text-justify">
-                        Certified Human Resource Professional (CHRPK) with over five years’ experience delivering effective HR solutions across diverse organizational environments. Proven expertise in recruitment and retention, payroll and benefits administration, statutory compliance, employee relations, performance management, HR records management, and policy development. Skilled in HRIS utilization, training and development, conflict resolution, and fostering productive workplace relationships. A results-driven HR practitioner committed to enhancing employee engagement and supporting business objectives.
+                <!-- Team Member 2 -->
+                <div class="group relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-orange-500 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-300"></div>
+                    <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./image 2.jpeg" alt="Dr. Fridah Kathure" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 text-center relative">
+                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-blue-600 to-orange-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:-translate-y-2">
+                                <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-orange-600 mb-2 transition-colors duration-300 group-hover:text-blue-600">
+                                Dr. Fridah Kathure
+                            </h3>
+                            <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-3 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                            <p class="text-gray-700 font-semibold mb-4 text-sm uppercase tracking-wide">
+                                Lead Trainer
+                            </p>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                An accomplished training professional with extensive expertise in procurement and supply chain management. Dr. Kathure specializes in developing and delivering transformative training programs that enhance organizational capacity and drive operational excellence across various industries.
+                            </p>
+                            <div class="mt-4 flex justify-center space-x-3">
+                                <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-envelope text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <button onclick="toggleBio('bio-alicia', this)"
-                        class="mt-3 text-orange-600 font-semibold hover:underline block mx-auto">
-                        Read more
-                    </button>
                 </div>
-            </div>
 
-            <!-- Team Member 4 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <img src="./image 4.jpeg" alt="Nelly Ayako Ambuli"  class="w-full h-80 object-cover object-top">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-orange-600 mb-2 text-center">
-                        Nelly Ayako Ambuli, MBA
-                    </h3>
-                    <p class="text-gray-600 text-center font-semibold">
-                        Group HR Manager & Head of People & Culture
-                    </p>
-
-                    <div id="bio-nelly" class="hidden text-sm text-gray-600 mt-3 text-justify">
-                        Nelly Ayako Ambuli is an accomplished Human Resource Executive and Youth Capacity Development Specialist with over fifteen (15) years of experience leading human capital strategy, workforce readiness, and institutional capacity strengthening across Kenya and international contexts. She provides strategic leadership in the design and implementation of people-centered HR systems that enhance organizational performance and sustainability.<br><br>
-                        She holds an MBA in Strategic Management and Human Resource Management, a Postgraduate Diploma in HR Management, and a Bachelor of Education (Arts). She is a professional member of the Institute of Human Resource Management (IHRM–Kenya).
+                <!-- Team Member 3 -->
+                <div class="group relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-orange-500 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-300"></div>
+                    <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./image 3.jpeg" alt="Alicia Mwende" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 text-center relative">
+                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-blue-600 to-orange-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:-translate-y-2">
+                                <i class="fas fa-users text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-orange-600 mb-2 transition-colors duration-300 group-hover:text-blue-600">
+                                Alicia Mwende
+                            </h3>
+                            <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-3 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                            <p class="text-gray-700 font-semibold mb-4 text-sm uppercase tracking-wide">
+                                Lead Human Resource Consultant
+                            </p>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                A certified HR professional with comprehensive expertise in talent management, employee relations, and organizational development. Alicia is passionate about creating workplace environments that foster growth, engagement, and excellence while aligning HR strategies with business objectives.
+                            </p>
+                            <div class="mt-4 flex justify-center space-x-3">
+                                <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-envelope text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <button onclick="toggleBio('bio-nelly', this)"
-                        class="mt-3 text-orange-600 font-semibold hover:underline block mx-auto">
-                        Read more
-                    </button>
                 </div>
-            </div>
 
-           
+                <!-- Team Member 4 -->
+                <div class="group relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-orange-500 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-300"></div>
+                    <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./image 4.jpeg" alt="Nelly Ayako Ambuli" class="w-full h-72 object-cover object-top transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 text-center relative">
+                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-blue-600 to-orange-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:-translate-y-2">
+                                <i class="fas fa-crown text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-orange-600 mb-2 transition-colors duration-300 group-hover:text-blue-600">
+                                Nelly Ayako Ambuli, MBA
+                            </h3>
+                            <div class="w-16 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-3 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                            <p class="text-gray-700 font-semibold mb-4 text-sm uppercase tracking-wide">
+                                Group HR Manager & Head of People & Culture
+                            </p>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                A strategic HR leader with 15+ years of experience in human capital management and organizational development. Nelly excels at designing people-centered HR systems that enhance performance, foster inclusive cultures, and drive sustainable business success across multinational environments.
+                            </p>
+                            <div class="mt-4 flex justify-center space-x-3">
+                                <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in text-sm"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center hover:bg-orange-600 hover:text-white transition-colors duration-300">
+                                    <i class="fas fa-envelope text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
